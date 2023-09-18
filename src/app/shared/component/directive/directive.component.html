@@ -1,0 +1,61 @@
+<div class="container my-4 p-4 bg bg-info">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="bg bg-warning">Directives</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!-- in css  -->
+            <p style="background-color: aqua; padding: 5px; border: 2px solid orange;">in css we use style attribute to apply inline css</p> 
+
+            <!-- passing hard coded value  -->
+           <p [ngStyle]="{backgroundColor : 'red', color: '#fff', border:'5px solid black'}">
+                            <strong>Directive which gives instructions to DOM.</strong> 
+                        <br>
+                        // instruction means >>if event has to bind we use javascript event binding
+                                        // >> if on button background color has to apply we use CSS
+                                        //instructions related to look & feel or functionality
+                                        //how the element should look.what should happen on button click.
+                       
+                       
+           </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="alert alert-warning">using property in string & passing value using method & hard coded</h1>
+           <p [ngStyle]="{'background-color': bgColor1(), 'color': 'red'}">
+             // Directive >>
+            <br>
+            // Component directve
+            //attribut directive   >> [ngStyle]
+            // structural directive
+            //ng-template
+            //ng-component
+            //ng-container
+            //ng-content
+            //router-outlet 
+         </p>
+        </div>
+    </div>
+
+   <div class="row">
+    <div class="col-sm-12">
+       <h1 class="alert alert-warning">  passing value from ts (using method) </h1>
+        <p [ngStyle]="{backgroundColor:bgColor2(),padding: padding()}">
+      //1. Attribut Directive >> to give inline css >>      <!--  [ngStyle] = "{CSSpropertyName : value}"  -->
+            <br>
+//value can be hard coded or can be pass through ts file using property (field) or method(function).
+        </p>
+    </div>
+   </div>
+
+   <div class="row">
+    <div class="col-md-12">
+        <h1 class="alert alert-warning">passing value through properties or field</h1>
+        <p [ngStyle]="{margin: margin, backgroundColor:'orange'}"><a href="we will learn more about directive...">we will learn more about directive...</a></p>
+    </div>
+   </div>
+</div>

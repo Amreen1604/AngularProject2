@@ -1,0 +1,19 @@
+.imgDiv{
+    width: 250px;
+   margin: 20px;
+}
+.imgDiv img{
+    width: 100%;
+   object-fit: cover;
+   overflow: hidden;
+   
+}
+
+//using interpolation & taking values from ts thats why using these css wriiten below
+
+// .imgDiv > img{
+//     width:300px;
+//    object-fit: cover;
+//    overflow: hidden;
+//    margin:  20px;
+// }

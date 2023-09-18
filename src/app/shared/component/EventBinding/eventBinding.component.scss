@@ -1,0 +1,11 @@
+.btn{
+    cursor: not-allowed !important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer !important;
+}
+
+// .info>p{
+//     color: #ee3131 ;
+// }

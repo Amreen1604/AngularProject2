@@ -1,0 +1,7 @@
+.btn{
+    cursor: not-allowed !important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer !important;
+}

@@ -1,0 +1,45 @@
+
+
+
+<div class="container bg bg-success my-4 p-4">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="bg bg-warning text-capitalize p-2 my-4">two way data binding [()]</h1>
+        </div>
+    </div>
+
+<div class="row m-2">
+    <div class="col-md-12">
+        <div class="form-group">
+            <input type="text" class="form-control"[(ngModel)]="searchProduct1">
+        </div>
+        <p class="alert alert-danger" [innerHTML]="searchProduct1">
+
+        </p>
+    </div>
+</div>
+
+  <div class="row">
+    <div class="col-sm-12">
+        <div class="form-group">
+            <input type="text"  class="form-control" [(ngModel)]="searchProduct2">
+        </div>
+        <p class="alert alert-dark" [innerHTML]="searchProduct2"></p>
+    </div>
+  </div>
+
+    <div class="row m-2">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <input type="text"  class="form-control" [(ngModel)]="searchProductName" (keyup)="onSearchProduct()">
+            </div>
+            <p class="alert alert-info" [innerHTML]="searchProductName">
+
+            </p>
+            <div class="text-right">
+                <button class="btn btn-warning" [disabled]="isDisabled">Search Product</button>
+            </div>
+        </div>
+       
+    </div>
+</div>

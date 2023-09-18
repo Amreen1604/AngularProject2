@@ -1,0 +1,26 @@
+
+
+<div class="container my-4 p-4 bg bg-success">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="bg bg-warning p-2 m-4">Button Disabled & Enabled</h1>
+            <form  id="postForm mb-4">
+                <div class="form-group">
+                    <label for="title">title</label>
+                    <input (input)="onKeyUp($event)" type="text" name="title" id="title" class="form-control" placeholder="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="content">content</label>
+                    <textarea name="content" id="content" rows="4" class="form-control" placeholder="content" required></textarea>
+                </div>
+
+
+                <div class="text-right mb-4">
+                    <!-- <button class="btn btn-primary disabled" id="submitBtn" (click)="onClick($event)">Add Details</button> -->
+
+                    <button class="btn btn-primary" id="submitBtn" [disabled]="isDisabled">Add Details</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
