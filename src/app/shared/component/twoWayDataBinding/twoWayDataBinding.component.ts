@@ -4,8 +4,8 @@ import {OnInit, Component } from "@angular/core";
 
 @Component({
     selector: 'app-TwoWayDataBinding',
-    templateUrl : './TwoWayDataBinding.component.html',
-    styleUrls : ['./TwoWayDataBinding.component.scss']
+    templateUrl : './twoWayDataBinding.component.html',
+    styleUrls : ['./twoWayDataBinding.component.scss']
 })
 export class TwoWayDataBindingComponent implements OnInit{
 
